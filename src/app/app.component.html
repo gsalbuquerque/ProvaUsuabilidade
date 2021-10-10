@@ -1,0 +1,26 @@
+
+  <form>
+    <div style="width: 1280px; margin:auto; text-align: center;">
+      <h2>Conversor Binario</h2>
+      <hr>
+      </div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="form-group col-sm-6 align-center">
+          <div class="row mb-2">
+            <label class="col-sm-4 col-form-label">Numero Binário</label>
+            <div class="col-sm-6">
+              <input [(ngModel)]="numeroBinario" name="numeroBinario" type="number" class="form-control" placeholder="Digite um número binário">
+            </div>
+          </div>
+          <div class="row">
+            <label class="col-sm-4 col-form-label">Numero Decimal</label>
+            <div class="col-sm-6">
+              <input [(ngModel)]="numeroDecimal" name="numeroDecimal"  readonly class="form-control mb-2">
+              <button (click)="NumeroBinarioParaDecimal()" type="button" class="btn btn-primary">Calcular</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
